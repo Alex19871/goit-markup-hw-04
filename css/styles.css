@@ -298,6 +298,7 @@ span {
     .team-soc-list {
         display: flex;
         justify-content: center;
+        padding-bottom: 30px;
     }
     .team-soc-link {
         width: 44px;
@@ -310,11 +311,17 @@ span {
         margin-left: 10px;
     }
 /* ---------------------------------------FOOTER----------------------------------- */
-    footer {
-    background-color: var(--hero-footer-bgc-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    .footer-content {
+        max-width: 1600px;
+        background-color: var(--hero-footer-bgc-color);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
     }
+    /* .footer {
+    background-color: var(--hero-footer-bgc-color);
+    } */
     .footer-logo {
         display: inline-block;
         font-family: 'Raleway';
@@ -356,6 +363,32 @@ margin-bottom: 0px;
     .footer-link:hover,
     .footer-link:focus {
         color: var(--accent-color);
+    }
+    .follow-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+    }
+    .follow {
+        display: inline-block;
+        
+    }
+    .follow-list {
+        display: flex;
+        justify-content: center;
+    }
+    .follow-item {
+
+    width: 44px;
+    height: 44px;
+    background-color: #2196F3;
+    border-radius: 50%;
+    display: block;
     }
     /* --------------------------------------------samples------------------------------------------ */
     .samples {
