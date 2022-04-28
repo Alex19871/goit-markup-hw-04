@@ -277,7 +277,8 @@ span {
     }
     .about-team-item {
         padding-top: 30px;
-        padding-bottom: 30px;
+        /* padding-bottom: 30px; */
+        margin-bottom: 16px;
     }
     .team-item-title {
         font-weight: 500;
@@ -293,6 +294,20 @@ span {
         line-height: 1.19;
         text-align: center;
         margin-top: 0px;
+    }
+    .team-soc-list {
+        display: flex;
+        justify-content: center;
+    }
+    .team-soc-link {
+        width: 44px;
+        height: 44px;
+        background-color: #2196F3;
+        border-radius: 50%;
+        display: block;
+    }
+    .team-soc-item + .team-soc-item {
+        margin-left: 10px;
     }
 /* ---------------------------------------FOOTER----------------------------------- */
     footer {
