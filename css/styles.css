@@ -110,8 +110,14 @@ span {
     margin-left: auto;
     justify-content: center;
     }
+    .header-mail-link {
+        display: flex;
+    }
+  
+    
+
     .header-mail {
-        
+        display: flex;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
@@ -119,17 +125,28 @@ span {
         color: var(--contacts-color);
         /* margin-right: 50px; */
     }
+    .mail-icon {
+        margin-right: 10px;
+        fill: currentColor;
+        align-self: center;
+    }
     .header-mail:hover,
     .header-mail:focus {
         color: var(--accent-color);
     }
     .header-tel {
+        display: flex;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
         color: var(--contacts-color);
         /* margin-right: 0px; */
+    }
+    .phone-icon {
+        margin-right: 10px;
+        fill: currentColor;
+        align-self: center;
     }
     .header-mail-li {
         margin-right: 50px;
@@ -207,9 +224,34 @@ span {
         margin-bottom: 10px;
     }
     .feature-item {
-       
+       display: block;
         width: 270px;
         margin-right: 30px;
+    }
+    .feature-item::before {
+        content: '';
+        display: block;
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: #F5F4FA;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .antenna::before {
+        background-image: url('../images/features/antenna.svg');
+    }
+    
+    .clock::before {
+        background-image: url('../images/features/clock.svg');
+    }
+    
+    .vector::before {
+        background-image: url('../images/features/diagram.svg');
+    }
+    
+    .austronaut::before {
+        background-image: url('../images/features/astronaut.svg');
     }
     .feature-item:last-child {
         margin-right: 0px;
@@ -369,7 +411,7 @@ span {
         fill: #2196F3;
         border: 1px solid #2196F3;
     }
-    .mail-icon 
+    /* .mail-icon  */
 /* ---------------------------------------FOOTER----------------------------------- */
  
 .footer {
@@ -508,6 +550,10 @@ margin-bottom: 0px;
     .services-item-btn:focus{
          color: var(--main-title-color);
          background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
     }
     .services-list {
         margin-bottom: 34px;
@@ -547,6 +593,12 @@ margin-bottom: 0px;
         display: block;
         width: 100%;
         height: auto;
+        
+    }
+    .examples-icon:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
     }
     .examples-item:nth-child(3n) {
         margin-right: 0px;
